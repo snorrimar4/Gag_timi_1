@@ -30,12 +30,13 @@ class Player:
         return f"Player: {self.name}, Coins: {self.coins}\nCurrent Position: {self.placement}"
 
 class Lever:
-    def __init__(self, coins_dispensed, coins_max) -> None:
-        pass
+    def __init__(self, coins_dispensed) -> None:
+        self.coins_dispensed = coins_dispensed
+        self.coins_max = AMOUNT_OF_COINS
 
 class Grid:
     def __init__(self, dimension) -> None:
-        pass
+        self.dimension = int(input("Enter the grid dimensions: "))
 
 p1 = Player(STARTING_POINT)
 #p2 = Player(STARTING_POINT)
