@@ -24,17 +24,17 @@ class Player:
     def __init__(self, placement, coins = 0) -> None:
         self.name = input('Enter a player name: ')
         self.placement = placement
-        self.coins = coins
+        self.coins = 0
 
     def __str__(self) -> str:
         return f"Player: {self.name}, Coins: {self.coins}\nCurrent Position: {self.placement}"
 
 class Lever:
-    def __init__(self, coin) -> None:
+    def __init__(self, coins_dispensed, coins_max) -> None:
         pass
 
 class Grid:
-    def __init__(self) -> None:
+    def __init__(self, dimension) -> None:
         pass
 
 p1 = Player(STARTING_POINT)
