@@ -16,6 +16,26 @@ import random
 STARTING_POINT = (1,1)
 AMOUNT_OF_COINS = random.randint(1,100)
 
+class Tile:
+    def __init__(self) -> None:
+        pass
+
+class Player:
+    def __init__(self, placement, coins = 0) -> None:
+        self.name = input('Enter a player name: ')
+        self.placement = placement
+        self.coins = 0
+
+    def __str__(self) -> str:
+        return f"Player: {self.name}, Coins: {self.coins}\nCurrent Position: {self.placement}"
+
+class Lever:
+    def __init__(self, coins_dispensed, coins_max) -> None:
+        pass
+
+class Grid:
+    def __init__(self, dimension) -> None:
+        pass
 
 p1 = Player(STARTING_POINT)
 #p2 = Player(STARTING_POINT)
